@@ -107,8 +107,8 @@ const Home = () => {
     });
 
     return (
-        <div class="section">
-            <section class="section__wrapper">
+        <section class="section">
+            <div class="section__wrapper">
                 <img src="./img//foliosky_background.png" alt="background logo" class="section__background" />
                 
                 <div className="title">
@@ -118,11 +118,11 @@ const Home = () => {
                     </div>
                     <Button style={ButtonSpring} >About me</Button>
                 </div>
-            </section>
+            </div>
             <IconWrapper style={IconSpring}>
                 <Icon icon={faChevronDown} />
             </IconWrapper>
-        </div>
+        </section>
     );
 }
 
