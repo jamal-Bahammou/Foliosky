@@ -6,10 +6,12 @@
     width: 100%;
     background: var(--navbar);
     box-shadow: 0 0.5rem 2rem var(--shadow-color);
+    position: fixed;
     z-index: 100;
 }
 
 .section {
+    height: 100vh;
     width: 100%;
     max-width: 124rem;
     padding: 0 4rem;
@@ -17,5 +19,5 @@
 }
 
 .main {
-    
+
 }
