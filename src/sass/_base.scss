@@ -33,10 +33,7 @@ body {
     color: var(--text);
 
     min-height: 100vh;
-}
-
-a {
-    text-decoration: none;
+    overflow-x:hidden;
 }
 
 ::selection {

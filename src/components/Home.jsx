@@ -5,6 +5,21 @@ import { useSpring, animated, config } from 'react-spring'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
 
+const StyledBackground = styled.img`
+    position: absolute;
+    top: 1%;
+    right: -4%;
+    width: 40%;
+    opacity: .6;
+    transform: rotate(-22deg);
+    background-color: transparent;
+    overflow: hidden;
+    user-select: none;
+    object-fit: cover;
+    object-position: center center;
+    z-index: -100;
+`;
+
 const Title = styled(animated.h1)`
     font-size: 6.5rem;
     font-weight: 200;
@@ -71,6 +86,13 @@ const Icon = styled(FontAwesomeIcon)`
 
 const Home = () => {
 
+    // Background animation
+    const BackgroundSpring = useSpring({
+        delay: 200,
+        opacity: 1,
+        from: { opacity: 0 }
+    })
+
     // Title animation
     const TitleSpring = useSpring({
         config: config.wobbly,
@@ -109,7 +131,9 @@ const Home = () => {
     return (
         <section class="section">
             <div class="section__wrapper">
-                <img src="./img//foliosky_background.png" alt="background logo" class="section__background" />
+                <animated.div style={BackgroundSpring}>
+                    <StyledBackground src="./img//foliosky_background.png" alt="background logo" />
+                </animated.div>
                 
                 <div className="title">
                     <div class="title__wrapper">
