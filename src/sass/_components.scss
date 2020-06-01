@@ -164,8 +164,7 @@
         font-style: italic;
         color: var(--color-white);
         position: relative;
-        padding: .4rem .4rem;
-        display: inline-block;
+        padding: .2rem .3rem;
         word-break: break-word;
         white-space: normal;
 
@@ -205,4 +204,69 @@
         color: inherit;
         margin-right: .5rem;
     }
+}
+
+// Portfolio ------------------------------------------------------------
+
+.portfolio {
+
+    &__content {
+        font-size: 1.7rem;
+        font-weight: 400;
+        line-height: 1.7;
+        text-align: center;
+        width: 95%;
+    }
+
+    &__item {
+        width: 100%;
+    }
+
+    &__header {
+        font-size: 1.8rem;
+        margin-bottom: 3.5rem;
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    &__image {
+        width: 48%;
+        border-radius: 3px;
+        box-shadow: 0px 8px 13px rgba(0,0,0,0.3);
+    }
+
+    &__description {
+        width: 48%;
+        text-align: left;
+
+    }
+
+    &__text {
+        font-size: 1.4rem;
+        font-weight: 400;
+        line-height: 1.7;
+        color: var(--text);
+        margin-bottom: 2rem;
+    }
+
+    &__stack {
+        font-size: 1.1rem;
+        font-weight: 700;
+        color: var(--text-highlight);
+        text-transform: uppercase;
+        margin-bottom: 3rem;
+    }
+
+    &__button {
+        display: flex;
+
+        & a:first-of-type {
+            margin-right: 3rem;
+        }
+    }
+
 }
