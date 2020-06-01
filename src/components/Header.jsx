@@ -4,7 +4,7 @@ const Header = () => {
     return (
         <header class="header">
             <div class="header__wrapper">
-                <img src="./img/foliosky.svg" alt="portfolio logo" class="header__logo" />
+                <img src="./logo/foliosky.svg" alt="portfolio logo" class="header__logo" />
                 <div className="header__text">
                     <p className="header__text-primary">Bahammou</p>
                     <p className="header__text-secondary">Web developer</p>

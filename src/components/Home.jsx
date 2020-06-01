@@ -132,12 +132,12 @@ const Home = () => {
         <section class="section">
             <div class="section__wrapper">
                 <animated.div style={BackgroundSpring}>
-                    <StyledBackground src="./img//foliosky_background.png" alt="background logo" />
+                    <StyledBackground src="./logo/foliosky_background.png" alt="background logo" />
                 </animated.div>
                 
                 <div className="title">
                     <div class="title__wrapper">
-                        <Title style={TitleSpring} >Hello <span role="img" aria-label="Cool hand emoji">&#9996;</span>,<br />I'm <span>Bahammou</span></Title>
+                        <Title style={TitleSpring} >Hello <span role="img" aria-label="Cool hand emoji">✌🏽</span>,<br />I'm <span>Bahammou</span></Title>
                         <SubTitle style={SubTitleSpring}>A <span>self-taught</span> Front-end developer</SubTitle>
                     </div>
                     <Button style={ButtonSpring} >About me</Button>

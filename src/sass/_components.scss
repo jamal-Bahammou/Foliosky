@@ -1,3 +1,4 @@
+// 🎲🎲 Header -------------------------------------------------------------------------------------------------------------
 .header {
     display: flex;
     align-items: center;
@@ -62,7 +63,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-bottom: 16rem;
 
     &__wrapper {
         width: 100%;
@@ -121,19 +121,9 @@
     }
 }
 
+// ✌✌ About me ----------------------------------------------------------------------------------------------------------
 .paragraph {
     margin: 1.6rem 0;
-}
-
-.cours {
-    &__link {
-        color: var(--text-highlight);
-        font-weight: 600;
-
-        &:hover {
-            color: var(--color-primary);
-        }
-    }
 }
 
 .language {
@@ -154,6 +144,34 @@
         &:not(:last-of-type){
             margin-bottom: 1rem;
         }
+    }
+}
+
+.cours {
+    &__link {
+        color: var(--text-highlight);
+        font-weight: 600;
+
+        &:hover {
+            color: var(--color-primary);
+        }
+    }
+}
+
+.button {
+
+    &__wrapper {
+        display: flex;
+        justify-content: center;
+
+        & a:first-of-type {
+            margin-right: 3rem;
+        }
+    }
+
+    &__icon {
+        color: inherit;
+        margin-right: .5rem;
     }
 }
 
@@ -189,24 +207,7 @@
 
 }
 
-.button {
-
-    &__wrapper {
-        display: flex;
-        justify-content: center;
-
-        & a:first-of-type {
-            margin-right: 3rem;
-        }
-    }
-
-    &__icon {
-        color: inherit;
-        margin-right: .5rem;
-    }
-}
-
-// Portfolio ------------------------------------------------------------
+// 💪💪 Portfolio ----------------------------------------------------------------------------------------------------------
 
 .portfolio {
 
@@ -216,10 +217,19 @@
         line-height: 1.7;
         text-align: center;
         width: 95%;
+
     }
 
     &__item {
         width: 100%;
+
+        &:not(:last-of-type) {
+            margin-bottom: 12rem;
+        }
+
+        &:first-of-type {
+            margin-top: 3rem;
+        }
     }
 
     &__header {
@@ -269,4 +279,69 @@
         }
     }
 
+}
+
+// 🔗🔗 Contact ------------------------------------------------------------------------------------------------------------
+.contact {
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__email {
+        font-size: 1.8rem;
+        font-weight: 600;
+        color: var(--text-highlight);
+        text-decoration: none;
+    }
+
+    &__wrapper {
+        display: flex;
+        margin: 4rem 0 10rem 0;
+    }
+
+    &__footer {
+        align-items: center;
+    }
+
+    &__logo {
+        width: 30%;
+        margin: 0 35%;
+    }
+
+    &__text {
+        color: var(--text-highlight);
+        margin-bottom: 2rem;
+
+        &-primary {
+            font-size: 3rem;
+            font-weight: 500;
+            line-height: 1;
+
+            text-transform: uppercase;
+        }
+
+        &-secondary {
+            font-size: 1rem;
+            font-weight: 700;
+            color: #777;
+            letter-spacing: 8px;
+            margin-left: 6px;
+            transform: scaleY(.98);
+
+            text-transform: uppercase;
+        }
+    }
+
+    &__copyright {
+        font-size: 1rem;
+        font-weight: 700;
+        color: var(--text-highlight);
+        text-transform: uppercase;
+        text-align: center;
+        letter-spacing: .7px;
+        transform: scaleY(.984);
+    }
 }

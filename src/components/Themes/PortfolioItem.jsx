@@ -10,10 +10,6 @@ const PortfolioWrapper = styled.div`
     display: flex;
     flex-direction: ${({ reverse }) => reverse ? 'row-reverse' : 'row' };
     justify-content: space-between;
-
-    // &:not(:last-type-of) {
-        margin-bottom: 10rem;
-    // }
 `;
 
 const PortfolioItem = ({ reverse, title, text, stack, image }) => {

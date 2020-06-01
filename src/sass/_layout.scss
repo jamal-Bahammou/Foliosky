@@ -13,11 +13,19 @@
 }
 
 .section {
-    min-height: 100vh;
     width: 100%;
     max-width: 124rem;
     padding: 0 4rem;
     margin: 0 auto;
+    
+    &:not(:last-of-type) {
+        min-height: 100vh;
+        margin-bottom: 18rem;
+    }
+
+    &:last-of-type {
+        margin-bottom: 4rem;
+    }
 }
 
 .main {
