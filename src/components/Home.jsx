@@ -1,9 +1,12 @@
 import React from 'react'
 import styled from 'styled-components'
 import { useSpring, animated, config } from 'react-spring'
+import { Link, Element } from 'react-scroll'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
+
+import ScrollTop from './Themes/ScrollTop'
 
 const StyledBackground = styled.img`
     position: absolute;
@@ -129,24 +132,30 @@ const Home = () => {
     });
 
     return (
-        <section class="section">
-            <div class="section__wrapper">
+        <Element className="section" name="home">
+            <div className="section__wrapper">
                 <animated.div style={BackgroundSpring}>
                     <StyledBackground src="./logo/foliosky_background.png" alt="background logo" />
                 </animated.div>
                 
                 <div className="title">
-                    <div class="title__wrapper">
+                    <div className="title__wrapper">
                         <Title style={TitleSpring} >Hello <span role="img" aria-label="Cool hand emoji">✌🏽</span>,<br />I'm <span>Bahammou</span></Title>
                         <SubTitle style={SubTitleSpring}>A <span>self-taught</span> Front-end developer</SubTitle>
                     </div>
-                    <Button style={ButtonSpring} >About me</Button>
+                    <Link to="about" offset={-110} spy={true} smooth={true} >
+                        <Button style={ButtonSpring} >About me</Button>
+                    </Link>
                 </div>
             </div>
             <IconWrapper style={IconSpring}>
-                <Icon icon={faChevronDown} />
+                <Link to="about" offset={-110} spy={true} smooth={true} >
+                    <Icon icon={faChevronDown} />
+                </Link>
             </IconWrapper>
-        </section>
+
+            <ScrollTop />
+        </Element>
     );
 }
 

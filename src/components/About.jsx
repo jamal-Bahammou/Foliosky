@@ -1,14 +1,17 @@
 import React from 'react'
+import { Element } from 'react-scroll'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPaperPlane, faFile } from '@fortawesome/free-solid-svg-icons';
+
 import Button from './Themes/Button'
+
 
 const About = () => {
     return (
-        <section className="section">
+        <Element className="section" name="about">
             <div className="section__header">
                 <h1 className="section__primary">About me</h1>
-                <h2 className="section__secondary">If you're <span className='span__secondary'>wendering</span> who <span className='span__secondary'>I am...</span></h2>
+                <h2 className="section__secondary">If you're <span className='span__secondary'>wondering</span> who <span className='span__secondary'>I am...</span></h2>
             </div>
             <div className="section__content">
                 <p className="paragraph">I'm <span className='span__primary'>Jamal Bahammou</span>, a 22 years old self-taught <span className='span__primary'>Front-end</span> developer, from <span className="primary">Morocco</span>.</p>
@@ -40,7 +43,7 @@ const About = () => {
                     </Button>
                 </div>
             </div>
-        </section>
+        </Element>
     );
 }
 

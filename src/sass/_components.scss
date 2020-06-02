@@ -12,8 +12,13 @@
     }
 
     &__logo {
-        height: 37.5px;
+        display: flex;
+        align-items: center;
         cursor: pointer;
+    }
+
+    &__image {
+        height: 35px;
         margin-right: 10px;
     }
 
@@ -23,9 +28,9 @@
         margin-right: auto;
 
         &-primary {
-            font-size: 23px;
+            font-size: 20px;
             font-weight: 400;
-            line-height: 20px;
+            line-height: 18px;
             color: var(--text-highlight);
             text-transform: uppercase;
         }
@@ -33,11 +38,12 @@
         &-secondary {
             font-size: 8px;
             font-weight: 700;
-            line-height: 10px;
+            line-height: 8px;
             margin-left: 2px;
             color: var(--color-primary-light);
-            letter-spacing: 6px;
+            letter-spacing: 4.3px;
             text-transform: uppercase;
+            transform: scaleY(.95);
         }
     }
 
@@ -85,7 +91,7 @@
         font-weight: 700;
         color: var(--color-primary);
         text-transform: uppercase;
-        margin-bottom: .4rem;
+        margin-bottom: .1rem;
     }
 
     &__secondary {
@@ -299,7 +305,7 @@
 
     &__wrapper {
         display: flex;
-        margin: 4rem 0 10rem 0;
+        margin: 4rem 0 8rem 0;
     }
 
     &__footer {
@@ -307,8 +313,8 @@
     }
 
     &__logo {
-        width: 30%;
-        margin: 0 35%;
+        width: 25%;
+        margin: 0 37.5%;
     }
 
     &__text {

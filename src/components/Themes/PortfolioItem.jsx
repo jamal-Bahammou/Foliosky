@@ -12,7 +12,7 @@ const PortfolioWrapper = styled.div`
     justify-content: space-between;
 `;
 
-const PortfolioItem = ({ reverse, title, text, stack, image }) => {
+const PortfolioItem = ({ reverse, title, text, stack, image, link, github }) => {
     return (
         <div className="portfolio__item">
             <h1 className="portfolio__header"><span className="span__primary">{ title }</span></h1>
@@ -21,11 +21,11 @@ const PortfolioItem = ({ reverse, title, text, stack, image }) => {
                     <p className="portfolio__text">{ text }</p>
                     <p className="portfolio__stack">{ stack }</p>
                     <div className="portfolio__button">
-                        <Button solid href='/' target="_blank" rel="noopener noreferrer">
+                        <Button solid href={link} target="_blank" rel="noopener noreferrer">
                             <FontAwesomeIcon icon={faLink} className="button__icon" />
                             Visit
                         </Button>
-                        <Button href='/' target="_blank" rel="noopener noreferrer">
+                        <Button href={github} target="_blank" rel="noopener noreferrer">
                             <FontAwesomeIcon icon={faGithub} className="button__icon" />
                             Source
                         </Button>
