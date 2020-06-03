@@ -12,6 +12,12 @@
     --shadow-color: rgba(0,0,0,0.1);
 }
 
+$bp-largest: 77.5em;      // 1240px / 16 px = 77.5em
+$bp-large: 62.5em;     // 1000px
+$bp-medium: 50em;      // 800px
+$bp-small: 37.5em;      // 600px
+$bp-smallest: 31.25em;  // 500px
+
 * {
     margin: 0;
     padding: 0;
@@ -24,6 +30,11 @@
 html {
     box-sizing: border-box;
     font-size: 62.5%;
+
+    @media only screen and (max-width: $bp-largest ) {
+        font-size: 55%;
+    }
+
 }
 
 body {

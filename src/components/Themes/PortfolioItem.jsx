@@ -10,6 +10,12 @@ const PortfolioWrapper = styled.div`
     display: flex;
     flex-direction: ${({ reverse }) => reverse ? 'row-reverse' : 'row' };
     justify-content: space-between;
+
+    @media only screen and (max-width: 62.5em ) {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 `;
 
 const PortfolioItem = ({ reverse, title, text, stack, image, link, github }) => {

@@ -10,9 +10,9 @@ import ScrollTop from './Themes/ScrollTop'
 
 const StyledBackground = styled.img`
     position: absolute;
+    width: 40%;
     top: 1%;
     right: -4%;
-    width: 40%;
     opacity: .6;
     transform: rotate(-22deg);
     background-color: transparent;
@@ -21,6 +21,23 @@ const StyledBackground = styled.img`
     object-fit: cover;
     object-position: center center;
     z-index: -100;
+
+    @media only screen and (max-width: 62.5em ) { // $bp-large
+        width: 45%;
+        top: 2%;
+        right: -7%;
+    }
+
+    @media only screen and (max-width: 50em ) { // $bp-medium
+        width: 55%;
+        right: -10%;
+    }
+
+    @media only screen and (max-width: 37.5em ) { // $bp-small
+        width: 70%;
+        top: 2%;
+    }
+
 `;
 
 const Title = styled(animated.h1)`
@@ -34,6 +51,19 @@ const Title = styled(animated.h1)`
         font-weight: 600;
         color: var(--color-primary-light);
     }
+
+    @media only screen and (max-width: 62.5em ) { // $bp-large
+        font-size: 6rem;
+    }
+
+    @media only screen and (max-width: 50em ) { // $bp-medium
+        font-size: 5rem;
+    }
+
+    @media only screen and (max-width: 37.5em ) { // $bp-small
+        font-size: 4.5rem;
+    }
+
 `;
 
 const SubTitle = styled(animated.h2)`
@@ -79,6 +109,10 @@ const Button = styled(animated.button)`
 const IconWrapper = styled(animated.div)`
     font-size: 2rem;
     margin-bottom: 3rem;
+
+    @media only screen and (max-width: 37.5em ) {
+        margin-bottom: 0;
+    }
 `;
 
 const Icon = styled(FontAwesomeIcon)`

@@ -17,10 +17,23 @@
     max-width: 124rem;
     padding: 0 4rem;
     margin: 0 auto;
+
+    @media only screen and (max-width: $bp-small ) {
+        padding: 0 2rem;
+    }
     
     &:not(:last-of-type) {
         min-height: 100vh;
         margin-bottom: 18rem;
+
+        @media only screen and (max-width: $bp-medium ) {
+            margin-bottom: 12rem;
+        }
+
+        @media only screen and (max-width: $bp-small ) {
+            min-height: 80vh;
+            margin-bottom: 8rem;
+        }
     }
 
     &:last-of-type {
