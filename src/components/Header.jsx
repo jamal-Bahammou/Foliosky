@@ -1,6 +1,19 @@
 import React from 'react'
 import styled from 'styled-components'
+import { animated, useSpring, config } from 'react-spring';
 import { Link } from 'react-scroll'
+
+const StyledHeader = styled(animated.header)`
+    display: flex;
+    align-items: center;
+
+    height: 6.7rem;
+    width: 100%;
+    background: var(--navbar);
+    box-shadow: 0 0.5rem 2rem var(--shadow-color);
+    position: fixed;
+    z-index: 100;
+`;
 
 const StyledLink = styled(Link)`
     font-size: 1.1rem;
@@ -17,13 +30,31 @@ const StyledLink = styled(Link)`
 `;
 
 const Header = ({ setShowScrollTop }) => {
+
+    // Animation
+    const HeaderSpring = useSpring({
+        config: config.wobbly,
+        opacity: 1,
+        height: '6.7rem',
+        from: { opacity: 0, height: '0rem' }
+    })
+
+    // Background animation
+    const WrapperSpring = useSpring({
+        delay: 400,
+        opacity: 1,
+        from: { opacity: 0 }
+    })
+
     return (
-        <header className="header">
-            <div className="header__wrapper">
-                <Link to="home" spy={true} smooth={true}
+        <StyledHeader style={HeaderSpring}>
+            <animated.div style={WrapperSpring} className="header__wrapper">
+                <Link
+                    to="home" spy={true} smooth={true}
                     onSetActive={() => setShowScrollTop(false)}
                     onSetInactive={() => setShowScrollTop(true)}
-                className="header__logo">
+                    className="header__logo"
+                >
                     <img src="./logo/foliosky.svg" alt="portfolio logo" className="header__image" />
                     <div className="header__text">
                         <p className="header__text-primary">Bahammou</p>
@@ -35,8 +66,8 @@ const Header = ({ setShowScrollTop }) => {
                     <StyledLink to="portfolio" offset={-110} spy={true} smooth={true} >Portfolio</StyledLink>
                     <StyledLink to="contact" spy={true} smooth={true} >Contact</StyledLink>
                 </nav>
-            </div>
-        </header>
+            </animated.div>
+        </StyledHeader>
     );
 }
 

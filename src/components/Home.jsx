@@ -6,6 +6,7 @@ import { Link, Element } from 'react-scroll'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
 
+import WordsFading from './Themes/WordsFading'
 import ScrollTop from './Themes/ScrollTop'
 
 const StyledBackground = styled.img`
@@ -175,7 +176,7 @@ const Home = () => {
                 <div className="title">
                     <div className="title__wrapper">
                         <Title style={TitleSpring} >Hello <span role="img" aria-label="Cool hand emoji">✌🏽</span>,<br />I'm <span>Bahammou</span></Title>
-                        <SubTitle style={SubTitleSpring}>A <span>self-taught</span> Front-end developer</SubTitle>
+                        <SubTitle style={SubTitleSpring}>A <WordsFading /> Front-end developer</SubTitle>
                     </div>
                     <Link to="about" offset={-110} spy={true} smooth={true} >
                         <Button style={ButtonSpring} >About me</Button>

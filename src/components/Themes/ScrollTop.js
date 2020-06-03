@@ -9,12 +9,12 @@ const StyledWrapper = styled(animated.div)`
     position: fixed;
     bottom: 0;
     right: 0;
-    width: 3.5rem;
-    height: 3.5rem;
+    width: 3.4rem;
+    height: 3.4rem;
     background-color: var(--color-primary);
     box-shadow: 0px 8px 15px var(--shadow-color);
     border-radius: 50%;
-    margin: 0 1.5rem 3rem 0;
+    margin: 0 1.6rem 3.75rem 0;
     opacity: ${({ show }) => show ? 1 : 0 };
     // display: ${({ show }) => show ? 'flex' : 'none' };
     display: flex;
