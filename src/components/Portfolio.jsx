@@ -21,6 +21,20 @@ const portfolio = () => {
                     github="https://github.com/jamal-Bahammou/Foliosky"
                 />
                 <PortfolioItem
+                    title="Breasky | Breast Cancer Detection"
+                    text="A Breast Cancer Detector made with React and Deep Learning, 
+                    This is my final year project, It detect breast cancer from base on diagnostic image of 
+                    timor. You can create a doctor acount, add new case, take examination for case and you can see 
+                    cases of other dortors in the same Hospital and discuss with them about the cases. For the user interface 
+                    I use React , database I use firebase because it offer a lot of feature easy like authentification. and I use Python to build
+                    Deep Learning model. and for the connection between frontend and backend I use flask. One of the projects I'm most pround of."
+                    stack="REACT - REDUX - SEMANTIC UI - FIREBASE - AUTH - FLASK - TENSORFLOW - KERAS"
+                    image="/Images/breasky.png"
+                    link="https://breasky.netlify.app"
+                    github="https://github.com/jamal-Bahammou/Breasky"
+                />
+                <PortfolioItem
+                    reverse
                     title="Movsky | Movies Library App"
                     text="A Movie Library made with React. It fetches information from an API, and displays it in a nice way based on the type that the user chose, Popular Top rated, Upcoming and a lot of type. You also get recommended movies based on the one you're watching, it uses React Router, and fetches the movie based on the URL, so you can easily reload the page and the data will be still fetched. It also uses lazy loading on images, has error handling, and uses Redux to manage state and sass for the styling."
                     stack="REACT - REDUX - SASS"
@@ -29,7 +43,6 @@ const portfolio = () => {
                     github="https://github.com/jamal-Bahammou/Movsky"
                 />
                 <PortfolioItem
-                    reverse
                     title="Weasky | Weather app"
                     text="A weather app, that gets user location, and fetches the current weather from an API. The user can then click on the location, and check the weather for the next 5 days. It's also possible to search for other locations, and add/remove them from favorites."
                     stack="REACT - SASS"
