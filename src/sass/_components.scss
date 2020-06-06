@@ -20,6 +20,10 @@
             margin: 0 2rem;
         }
 
+        @media only screen and (max-width: $bp-smallest ) {
+            margin: 0 1rem;
+        }
+
     }
 
     &__logo {
@@ -38,6 +42,10 @@
         flex-direction: column;
         margin-right: auto;
 
+        @media only screen and (max-width: $bp-smallest ) {
+            display: none;
+        }
+
         &-primary {
             font-size: 2.2rem;
             font-weight: 500;
@@ -55,22 +63,6 @@
             letter-spacing: .46rem;
             text-transform: uppercase;
             transform: scaleY(.90);
-        }
-    }
-
-    .navigator {
-
-        &__link {
-            font-size: 1.1rem;
-            font-weight: 700;
-            padding: 1rem 2rem;
-            color: var(--color-text);
-            text-decoration: none;
-            text-transform: uppercase;
-
-            &:hover {
-                color: var(--color-primary-light);
-            }
         }
     }
 }

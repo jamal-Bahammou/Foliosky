@@ -9,6 +9,7 @@ const StyledHeader = styled(animated.header)`
 
     height: 6.7rem;
     width: 100%;
+    max-width: 100vw;
     background: var(--navbar);
     box-shadow: 0 0.5rem 2rem var(--shadow-color);
     position: fixed;
@@ -23,6 +24,11 @@ const StyledLink = styled(Link)`
     text-decoration: none;
     text-transform: uppercase;
     cursor: pointer;
+
+    @media only screen and (max-width: 31.25em ) {
+        font-size: 1rem;
+        padding: .5rem 1rem;
+    }
 
     &:hover {
         color: var(--color-primary-light);

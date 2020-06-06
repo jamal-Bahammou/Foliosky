@@ -40,7 +40,7 @@ const StyledIcon = styled(FontAwesomeIcon)`
 
 const ScrollTop = ({ show }) => {
     return (
-        <StyledWrapper show={show} onClick={ () => scroll.scrollToTop() } >
+        <StyledWrapper show={show ? 1 : 0} onClick={ () => scroll.scrollToTop() } >
             <StyledIcon icon={faChevronUp} />
         </StyledWrapper>
     );

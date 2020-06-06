@@ -12,12 +12,11 @@ import ScrollTop from './Themes/ScrollTop'
 const StyledBackground = styled.img`
     position: absolute;
     width: 40%;
-    top: 1%;
+    top: 0;
     right: -4%;
     opacity: .6;
     transform: rotate(-22deg);
     background-color: transparent;
-    overflow: hidden;
     user-select: none;
     object-fit: cover;
     object-position: center center;
@@ -25,7 +24,6 @@ const StyledBackground = styled.img`
 
     @media only screen and (max-width: 62.5em ) { // $bp-large
         width: 45%;
-        top: 2%;
         right: -7%;
     }
 
@@ -36,7 +34,6 @@ const StyledBackground = styled.img`
 
     @media only screen and (max-width: 37.5em ) { // $bp-small
         width: 70%;
-        top: 2%;
     }
 
 `;

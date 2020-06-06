@@ -1,6 +1,8 @@
 .container {
     width: 100vw;
     max-width: 100%;
+    overflow-x: hidden;
+    position: relative;
 }
 
 .section {
