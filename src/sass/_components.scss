@@ -185,6 +185,11 @@
         color: var(--text-highlight);
         font-weight: 600;
 
+        &-portfolio {
+            cursor: pointer;
+            text-decoration: underline;
+        }
+
         &:hover {
             color: var(--color-primary);
         }

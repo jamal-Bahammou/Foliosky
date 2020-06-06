@@ -1,5 +1,5 @@
 import React from 'react'
-import { Element } from 'react-scroll'
+import { Link, Element } from 'react-scroll'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPaperPlane, faFile } from '@fortawesome/free-solid-svg-icons';
 
@@ -15,6 +15,7 @@ const About = () => {
             </div>
             <div className="section__content">
                 <p className="paragraph">I'm <span className='span__primary'>Jamal Bahammou</span>, a 22 years old self-taught <span className='span__primary'>Front-end</span> developer, from <span className="primary">Morocco</span>.</p>
+                <p className="paragraph">After my first year in university <span className="span__secondary">¨Mathematical and computer science¨</span>, I started to love <span className="span__secondary">solving algorithm problems</span>, but I only developed websites with HTML & CSS… So I <span className="span__secondary">wasn’t learning and improving</span> quickly as I want, I <span className="span__secondary">felt stuck</span>.</p>
                 <p className="paragraph">In January 2019 I decided it was <span className='span__secondary'>time for a change</span>, so I started to wake up at 6am to <span className="span__secondary">study javascript before going into university</span>. I quickly started to <span className="span__primary">love Javascript</span>.</p>
                 <p className="paragraph">During this time, I took online courses like {' '}
                 <a className="cours__link" href='https://www.udemy.com/course/advanced-css-and-sass/' target='_blank' rel="noopener noreferrer">Advanced Css and Sass: Flexbox, Grid, Animations and More!</a>,{' '}
@@ -24,7 +25,7 @@ const About = () => {
                 <a className="cours__link" href='https://www.udemy.com/course/react-redux/' target='_blank' rel="noopener noreferrer">Modern React with Redux</a>,{' '}
                 <a className="cours__link" href='https://www.udemy.com/course/build-an-app-with-react-redux-and-firestore-from-scratch/' target='_blank' rel="noopener noreferrer">Build an app with React, Redux and Firestore from scratch</a>,{' '}
                 and also watched countless youtube videos about Javascript.</p>{' '}
-                <p className="paragraph">Because we know the best way to learn is to practice, I also did a bunch of personal projects with the knowledge I gathered from the courses, you can check them on my portfolio.</p>
+                <p className="paragraph">Because we know the best way to learn is to <span className="span__secondary">practice</span>, I also did a bunch of <span className="span__secondary">personal projects</span> with the knowledge I gathered from the courses, you can check them on my <Link className="cours__link cours__link-portfolio" to="portfolio" offset={-110} spy={true} smooth={true} >portfolio</Link>.</p>
                 <p className="paragraph">I always want to <span className="span__secondary">learn more</span>, <span className="span__secondary">do more</span>, and <span className="span__secondary">be more</span>. I’m also a firm believer that we should <span className="span__primary">never settle</span>.</p>
                 <p className="paragraph">I’m <span className="span__secondary">hard working</span>, <span className="span__secondary">super curious</span>, <span className="span__secondary">passionate</span>, <span className="span__secondary">committed</span>, and also a <span className="span__secondary">fast learner</span>!</p>
                 <h2 className="section__tertiary">My current <span className="span__primary">stack</span> of <span className="span__primary">language/technologies</span> is:</h2>

@@ -17,17 +17,12 @@ const portfolio = () => {
                     text="This very website you're now watching. I wanted something to look good and animated, so I create this website to wrip all of my project, and to be super easy for me to keep adding Portfolio items as I keep developing stuff."
                     stack="REACT - STYLED COMPONENTS"
                     image="/Images/foliosky.png"
-                    link="/"
+                    link="https://bahammou.netlify.app"
                     github="https://github.com/jamal-Bahammou/Foliosky"
                 />
                 <PortfolioItem
                     title="Breasky | Breast Cancer Detection"
-                    text="A Breast Cancer Detector made with React and Deep Learning, 
-                    This is my final year project, It detect breast cancer from base on diagnostic image of 
-                    timor. You can create a doctor acount, add new case, take examination for case and you can see 
-                    cases of other dortors in the same Hospital and discuss with them about the cases. For the user interface 
-                    I use React , database I use firebase because it offer a lot of feature easy like authentification. and I use Python to build
-                    Deep Learning model. and for the connection between frontend and backend I use flask. One of the projects I'm most pround of."
+                    text="This is my final year project, I wanted to do something challenging myself, my knowledge and to be of a human purpose, So I found that nothing is better than implement Deep learning in the healthcare industry. So this is the application that I create, It detects breast cancer base on diagnostic image of Timor. It uses React in frontend and python backend, database firebase, and server-side flask. You can create a doctor account, add a new case, take an examination for the case, and you can see cases of other doctors in the same Hospital, and discuss with them about the cases. One of the projects I'm most pround of."
                     stack="REACT - REDUX - SEMANTIC UI - FIREBASE - AUTH - FLASK - TENSORFLOW - KERAS"
                     image="/Images/breasky.png"
                     link="https://breasky.netlify.app"
@@ -43,12 +38,21 @@ const portfolio = () => {
                     github="https://github.com/jamal-Bahammou/Movsky"
                 />
                 <PortfolioItem
-                    title="Weasky | Weather app"
+                    title="Weasky | Weather App"
                     text="A weather app, that gets user location, and fetches the current weather from an API. The user can then click on the location, and check the weather for the next 5 days. It's also possible to search for other locations, and add/remove them from favorites."
                     stack="REACT - SASS"
                     image="/Images/weasky.png"
                     link="https://weasky.netlify.app"
                     github="https://github.com/jamal-Bahammou/Weasky"
+                />
+                <PortfolioItem
+                    reverse
+                    title="Natsky | Exciting Tours Site"
+                    text="A Natours web site that I create went I take Sass animation course, In this site I learn a lot of new techniques in CSS, Sass and animation. after finishing this site I felt I took a step forward in the design side."
+                    stack="HTML5 - CSS3 - SASS - ANIMATION"
+                    image="/Images/natsky.png"
+                    link="https://natsky.netlify.app"
+                    github="https://github.com/jamal-Bahammou/CSS_COURS/tree/master/Natours"
                 />
             </div>
         </Element>
