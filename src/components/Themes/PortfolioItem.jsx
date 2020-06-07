@@ -12,7 +12,7 @@ const PortfolioWrapper = styled.div`
     justify-content: space-between;
 
     @media only screen and (max-width: 62.5em ) {
-        flex-direction: column;
+        flex-direction: column-reverse;
         justify-content: center;
         align-items: center;
     }
