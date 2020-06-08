@@ -17,7 +17,7 @@ const portfolio = () => {
                     text="This very website you're now watching. I wanted something to look good and animated, so I create this website to wrip all of my project, and to be super easy for me to keep adding Portfolio items as I keep developing stuff."
                     stack="REACT - STYLED COMPONENTS"
                     image="/Images/foliosky.png"
-                    link="https://bahammou.netlify.app"
+                    link="https://bahammou.com"
                     github="https://github.com/jamal-Bahammou/Foliosky"
                 />
                 <PortfolioItem
