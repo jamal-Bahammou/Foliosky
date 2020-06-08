@@ -21,7 +21,7 @@ const About = () => {
                 <p className="paragraph">During this time, I took online courses like {' '}
                 <a className="cours__link" href='https://www.udemy.com/course/advanced-css-and-sass/' target='_blank' rel="noopener noreferrer">Advanced Css and Sass: Flexbox, Grid, Animations and More!</a>,{' '}
                 <a className="cours__link" href='https://www.udemy.com/course/modern-javascript-from-the-beginning/' target='_blank' rel="noopener noreferrer">Modern Javascript From The Beginning</a>,{' '}
-                <a className="cours__link" href='https://javascript30.com/' target='_blank' rel="noopener noreferrer">Javascript30</a>,{' '}
+                <a className="cours__link" href='https://www.javascript30.com/' target='_blank' rel="noopener noreferrer">Javascript30</a>,{' '}
                 <a className="cours__link" href='https://www.udemy.com/course/javascript-es6-tutorial/' target='_blank' rel="noopener noreferrer">ES6 Javascript: The Complete Developer's Guide</a>,{' '}
                 <a className="cours__link" href='https://www.udemy.com/course/react-redux/' target='_blank' rel="noopener noreferrer">Modern React with Redux</a>,{' '}
                 <a className="cours__link" href='https://www.udemy.com/course/build-an-app-with-react-redux-and-firestore-from-scratch/' target='_blank' rel="noopener noreferrer">Build an app with React, Redux and Firestore from scratch</a>,{' '}

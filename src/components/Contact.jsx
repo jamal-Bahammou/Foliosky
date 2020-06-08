@@ -16,7 +16,7 @@ const Contact = () => {
                 <div className="contact__wrapper">
                     <SocialButton
                         label="Github"
-                        href="https://github.com/jamal-Bahammou"
+                        href="https://www.github.com/jamal-Bahammou"
                         icon={faGithub}
                     />
                     <SocialButton
@@ -31,7 +31,7 @@ const Contact = () => {
                     />
                     <SocialButton
                         label="Twatter"
-                        href="https://twitter.com/jamal_bahammou"
+                        href="https://www.twitter.com/jamal_bahammou"
                         icon={faTwitter}
                     />
                     <SocialButton
