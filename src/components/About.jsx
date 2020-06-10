@@ -32,7 +32,7 @@ const About = () => {
                 <h2 className="section__tertiary">My current <span className="span__primary">stack</span> of <span className="span__primary">language/technologies</span> is:</h2>
                 <div className="language">
                     <p className="language__detail">HTML5 - CSS3 - JAVASCRIPT - SASS - WEBPACK - REACTJS - REDUX - GRAPHQL - APPOLO - STYLED COMPONENTS - CSS MODULES - FIREBASE - BABEL</p>
-                    <p className="language__detail">PYTHON - ANACONDA - TENSORFLOW - KERAS - MACHINGE LEARNING - DEEP LEARNING - OPENCV - COMPUTER VISION</p>
+                    <p className="language__detail">PYTHON - FLASK - SQL - ANACONDA - TENSORFLOW - KERAS - MACHINGE LEARNING - DEEP LEARNING - OPENCV - COMPUTER VISION</p>
                 </div>
                 <div className="button__wrapper">
                     <Button solid href='#' rel="noopener noreferrer">
