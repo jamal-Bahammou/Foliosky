@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPaperPlane, faFile } from '@fortawesome/free-solid-svg-icons';
 
 import Button from './Themes/Button'
+import LtrMotivation from '../static/Motivation-Letter.pdf'
 import CVBahammouFR from '../static/CV-Bahammou-FR.pdf'
 
 
@@ -35,7 +36,7 @@ const About = () => {
                     <p className="language__detail">PYTHON - FLASK - SQL - ANACONDA - TENSORFLOW - KERAS - MACHINGE LEARNING - DEEP LEARNING - OPENCV - COMPUTER VISION</p>
                 </div>
                 <div className="button__wrapper">
-                    <Button solid href='#' rel="noopener noreferrer">
+                    <Button solid href={LtrMotivation} rel="noopener noreferrer">
                         <FontAwesomeIcon icon={faPaperPlane} className="button__icon" />
                         Resume
                     </Button>
