@@ -33,7 +33,7 @@ const About = () => {
                 <h2 className="section__tertiary">My current <span className="span__primary">stack</span> of <span className="span__primary">language/technologies</span> is:</h2>
                 <div className="language">
                     <p className="language__detail">HTML5 - CSS3 - SASS - JAVASCRIPT - REACTJS - REDUX - GRAPHQL - APPOLO - FIREBASE - STYLED COMPONENTS - CSS MODULES - WEBPACK - BABEL</p>
-                    <p className="language__detail">PYTHON - FLASK - SQL - ANACONDA - TENSORFLOW - KERAS - MACHINGE LEARNING - DEEP LEARNING - OPENCV - COMPUTER VISION</p>
+                    <p className="language__detail">PYTHON - FLASK - C++ - SQL - ANACONDA - TENSORFLOW - KERAS - MACHINGE LEARNING - DEEP LEARNING - OPENCV - COMPUTER VISION</p>
                 </div>
                 <div className="button__wrapper">
                     <Button solid href={LtrMotivation} rel="noopener noreferrer">
