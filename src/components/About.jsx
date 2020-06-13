@@ -32,7 +32,7 @@ const About = () => {
                 <p className="paragraph">I’m <span className="span__secondary">hard working</span>, <span className="span__secondary">super curious</span>, <span className="span__secondary">passionate</span>, <span className="span__secondary">committed</span>, and also a <span className="span__secondary">fast learner</span>!</p>
                 <h2 className="section__tertiary">My current <span className="span__primary">stack</span> of <span className="span__primary">language/technologies</span> is:</h2>
                 <div className="language">
-                    <p className="language__detail">HTML5 - CSS3 - SASS - JAVASCRIPT - REACTJS - REDUX - GRAPHQL - APPOLO - FIREBASE - STYLED COMPONENTS - CSS MODULES - WEBPACK - BABEL</p>
+                    <p className="language__detail">HTML5 - CSS3 - SASS - JAVASCRIPT - REACT - REDUX - GRAPHQL - APPOLO - FIREBASE - STYLED COMPONENTS - CSS MODULES - WEBPACK - BABEL</p>
                     <p className="language__detail">PYTHON - FLASK - C++ - SQL - ANACONDA - TENSORFLOW - KERAS - MACHINGE LEARNING - DEEP LEARNING - OPENCV - COMPUTER VISION</p>
                 </div>
                 <div className="button__wrapper">
