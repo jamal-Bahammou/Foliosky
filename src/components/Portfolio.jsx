@@ -1,14 +1,16 @@
-import React from 'react'
-import { Element } from 'react-scroll'
+import React from 'react';
+import { Element } from 'react-scroll';
 
-import PortfolioItem from './Themes/PortfolioItem'
+import PortfolioItem from './Themes/PortfolioItem';
 
 const portfolio = () => {
     return (
         <Element className="section" name="portfolio">
             <div className="section__header">
                 <h1 className="section__primary">Portfolio</h1>
-                <h2 className="section__secondary">Check <span className='span__secondary'>what</span> I've been doing <span className='span__secondary'>lately</span></h2>
+                <h2 className="section__secondary">
+                    Check <span className="span__secondary">what</span> I've been doing <span className="span__secondary">lately</span>
+                </h2>
             </div>
             <div className="portfolio__content">
                 <PortfolioItem
@@ -47,16 +49,16 @@ const portfolio = () => {
                 />
                 <PortfolioItem
                     reverse
-                    title="Natsky | Exciting Tours Site"
+                    title="Natosky | Exciting Tours Site"
                     text="A Natours web site that I create went I take Sass animation course, In this site I learn a lot of new techniques in CSS, Sass and animation. after finishing this site I felt I took a step forward in the design side."
                     stack="HTML5 - CSS3 - SASS - ANIMATION"
                     image="/Images/natsky.png"
                     link="https://natsky.netlify.app"
-                    github="https://www.github.com/jamal-Bahammou/CSS_COURS/tree/master/Natours"
+                    github="https://github.com/jamal-Bahammou/Natosky"
                 />
             </div>
         </Element>
     );
-}
+};
 
 export default portfolio;

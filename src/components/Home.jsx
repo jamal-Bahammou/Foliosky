@@ -1,20 +1,20 @@
-import React from 'react'
-import styled from 'styled-components'
-import { useSpring, animated, config } from 'react-spring'
-import { Link, Element } from 'react-scroll'
+import React from 'react';
+import styled from 'styled-components';
+import { useSpring, animated, config } from 'react-spring';
+import { Link, Element } from 'react-scroll';
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 
-import WordsFading from './Themes/WordsFading'
-import ScrollTop from './Themes/ScrollTop'
+import WordsFading from './Themes/WordsFading';
+import ScrollTop from './Themes/ScrollTop';
 
 const StyledBackground = styled.img`
     position: absolute;
     width: 40%;
     top: 0;
     right: -4%;
-    opacity: .6;
+    opacity: 0.6;
     transform: rotate(-22deg);
     background-color: transparent;
     user-select: none;
@@ -22,20 +22,22 @@ const StyledBackground = styled.img`
     object-position: center center;
     z-index: -100;
 
-    @media only screen and (max-width: 62.5em ) { // $bp-large
+    @media only screen and (max-width: 62.5em) {
+        // $bp-large
         width: 45%;
         right: -7%;
     }
 
-    @media only screen and (max-width: 50em ) { // $bp-medium
+    @media only screen and (max-width: 50em) {
+        // $bp-medium
         width: 55%;
         right: -10%;
     }
 
-    @media only screen and (max-width: 37.5em ) { // $bp-small
+    @media only screen and (max-width: 37.5em) {
+        // $bp-small
         width: 70%;
     }
-
 `;
 
 const Title = styled(animated.h1)`
@@ -50,18 +52,20 @@ const Title = styled(animated.h1)`
         color: var(--color-primary-light);
     }
 
-    @media only screen and (max-width: 62.5em ) { // $bp-large
+    @media only screen and (max-width: 62.5em) {
+        // $bp-large
         font-size: 6rem;
     }
 
-    @media only screen and (max-width: 50em ) { // $bp-medium
+    @media only screen and (max-width: 50em) {
+        // $bp-medium
         font-size: 5rem;
     }
 
-    @media only screen and (max-width: 37.5em ) { // $bp-small
+    @media only screen and (max-width: 37.5em) {
+        // $bp-small
         font-size: 4.5rem;
     }
-
 `;
 
 const SubTitle = styled(animated.h2)`
@@ -91,7 +95,7 @@ const Button = styled(animated.button)`
     outline: none;
     text-transform: uppercase;
     box-shadow: 0px 8px 15px var(--shadow-color);
-    transition: all .2s ease-out;
+    transition: all 0.2s ease-out;
 
     &:hover {
         transform: translateY(-3px);
@@ -108,7 +112,7 @@ const IconWrapper = styled(animated.div)`
     font-size: 2rem;
     margin-bottom: 3rem;
 
-    @media only screen and (max-width: 37.5em ) {
+    @media only screen and (max-width: 37.5em) {
         margin-bottom: 0;
     }
 `;
@@ -120,13 +124,12 @@ const Icon = styled(FontAwesomeIcon)`
 `;
 
 const Home = () => {
-
     // Background animation
     const BackgroundSpring = useSpring({
         delay: 200,
         opacity: 1,
-        from: { opacity: 0 }
-    })
+        from: { opacity: 0 },
+    });
 
     // Title animation
     const TitleSpring = useSpring({
@@ -143,15 +146,15 @@ const Home = () => {
         delay: 300,
         opacity: 1,
         transform: 'translateY(0px)',
-        from: { opacity: 0, transform: 'translateY(40px' }
-    })
+        from: { opacity: 0, transform: 'translateY(40px' },
+    });
 
     // Button animation
     const ButtonSpring = useSpring({
         config: config.stiff,
         delay: 600,
         opacity: 1,
-        from: { opacity: 0 }
+        from: { opacity: 0 },
     });
 
     // Icon animation
@@ -160,7 +163,7 @@ const Home = () => {
         delay: 500,
         opacity: 1,
         transform: 'translate(-50%, 0px)',
-        from: { opacity: 0, transform: 'translate(-50%, 40px)' }
+        from: { opacity: 0, transform: 'translate(-50%, 40px)' },
     });
 
     return (
@@ -169,19 +172,29 @@ const Home = () => {
                 <animated.div style={BackgroundSpring}>
                     <StyledBackground src="./logo/foliosky_background.png" alt="background logo" />
                 </animated.div>
-                
+
                 <div className="title">
                     <div className="title__wrapper">
-                        <Title style={TitleSpring} >Hello <span role="img" aria-label="Cool hand emoji">✌🏽</span>,<br />I'm <span>Bahammou</span></Title>
-                        <SubTitle style={SubTitleSpring}>A <WordsFading /> Front-end developer</SubTitle>
+                        <Title style={TitleSpring}>
+                            Hello{' '}
+                            <span role="img" aria-label="Cool hand emoji">
+                                ✌🏽
+                            </span>
+                            ,<br />
+                            I'm <span>Bahammou</span>
+                        </Title>
+                        <SubTitle style={SubTitleSpring}>
+                            A <WordsFading />
+                            Full-stack developer
+                        </SubTitle>
                     </div>
-                    <Link to="about" offset={-110} spy={true} smooth={true} >
-                        <Button style={ButtonSpring} >About me</Button>
+                    <Link to="about" offset={-110} spy={true} smooth={true}>
+                        <Button style={ButtonSpring}>About me</Button>
                     </Link>
                 </div>
             </div>
             <IconWrapper style={IconSpring}>
-                <Link to="about" offset={-110} spy={true} smooth={true} >
+                <Link to="about" offset={-110} spy={true} smooth={true}>
                     <Icon icon={faChevronDown} />
                 </Link>
             </IconWrapper>
@@ -189,6 +202,6 @@ const Home = () => {
             <ScrollTop />
         </Element>
     );
-}
+};
 
 export default Home;

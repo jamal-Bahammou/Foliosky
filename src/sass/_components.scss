@@ -1,6 +1,5 @@
 // 🎲🎲 Header -------------------------------------------------------------------------------------------------------------
 .header {
-    
     &__wrapper {
         width: 100%;
         display: flex;
@@ -8,22 +7,21 @@
         align-items: center;
         margin: 0 11rem;
 
-        @media only screen and (max-width: $bp-large ) {
+        @media only screen and (max-width: $bp-large) {
             margin: 0 6rem;
         }
 
-        @media only screen and (max-width: $bp-medium ) {
+        @media only screen and (max-width: $bp-medium) {
             margin: 0 4rem;
         }
 
-        @media only screen and (max-width: $bp-small ) {
+        @media only screen and (max-width: $bp-small) {
             margin: 0 2rem;
         }
 
-        @media only screen and (max-width: $bp-smallest ) {
+        @media only screen and (max-width: $bp-smallest) {
             margin: 0 1rem;
         }
-
     }
 
     &__logo {
@@ -42,27 +40,28 @@
         flex-direction: column;
         margin-right: auto;
 
-        @media only screen and (max-width: $bp-smallest ) {
+        @media only screen and (max-width: $bp-smallest) {
             display: none;
         }
 
         &-primary {
             font-size: 2.2rem;
-            font-weight: 500;
+            font-weight: 600;
             line-height: 1.8rem;
-            color: var(--text);
+            color: #0b5567;
             text-transform: uppercase;
         }
 
         &-secondary {
-            font-size: .9rem;
+            font-size: 0.9rem;
             font-weight: 700;
-            line-height: .8rem;
-            margin-left: .3rem;
+            line-height: 1rem;
+            margin-top: 0.3rem;
+            margin-left: 0.3rem;
             color: var(--color-primary-light);
-            letter-spacing: .46rem;
+            letter-spacing: 0.46rem;
             text-transform: uppercase;
-            transform: scaleY(.90);
+            transform: scaleY(0.9);
         }
     }
 }
@@ -88,11 +87,11 @@
         text-align: center;
         margin-bottom: 6rem;
 
-        @media only screen and (max-width: $bp-medium ) {
+        @media only screen and (max-width: $bp-medium) {
             margin-bottom: 4rem;
         }
 
-        @media only screen and (max-width: $bp-small ) {
+        @media only screen and (max-width: $bp-small) {
             margin-bottom: 3rem;
         }
     }
@@ -102,7 +101,7 @@
         font-weight: 700;
         color: var(--color-primary);
         text-transform: uppercase;
-        margin-bottom: .1rem;
+        margin-bottom: 0.1rem;
     }
 
     &__secondary {
@@ -126,17 +125,16 @@
         text-align: center;
         width: 85%;
 
-        @media only screen and (max-width: $bp-small ) {
+        @media only screen and (max-width: $bp-small) {
             width: 95%;
         }
     }
-
 }
 
 .title {
     width: 90%;
     margin: 0 auto;
-    
+
     &__wrapper {
         margin-bottom: 6rem;
     }
@@ -151,11 +149,11 @@
     width: 75%;
     margin: 0 auto;
 
-    &:not(:last-child){
+    &:not(:last-child) {
         margin-bottom: 3rem;
     }
 
-    @media only screen and (max-width: $bp-medium ) {
+    @media only screen and (max-width: $bp-medium) {
         width: 100%;
     }
 
@@ -166,7 +164,7 @@
         color: var(--color-primary);
         text-transform: uppercase;
 
-        &:not(:last-of-type){
+        &:not(:last-of-type) {
             margin-bottom: 1rem;
         }
     }
@@ -189,7 +187,6 @@
 }
 
 .button {
-
     &__wrapper {
         display: flex;
         justify-content: center;
@@ -201,18 +198,17 @@
 
     &__icon {
         color: inherit;
-        margin-right: .5rem;
+        margin-right: 0.5rem;
     }
 }
 
 .span {
-
     &__primary {
         font-weight: 600;
         font-style: italic;
         color: var(--color-white);
         position: relative;
-        padding: .2rem .3rem;
+        padding: 0.2rem 0.3rem;
         word-break: break-word;
         white-space: normal;
 
@@ -234,20 +230,17 @@
         font-weight: 600;
         font-style: italic;
     }
-
 }
 
 // 💪💪 Portfolio ----------------------------------------------------------------------------------------------------------
 
 .portfolio {
-
     &__content {
         font-size: 1.7rem;
         font-weight: 400;
         line-height: 1.7;
         text-align: center;
         width: 95%;
-
     }
 
     &__item {
@@ -256,14 +249,13 @@
         &:not(:last-of-type) {
             margin-bottom: 12rem;
 
-            @media only screen and (max-width: $bp-medium ) {
+            @media only screen and (max-width: $bp-medium) {
                 margin-bottom: 10rem;
             }
-    
-            @media only screen and (max-width: $bp-small ) {
+
+            @media only screen and (max-width: $bp-small) {
                 margin-bottom: 8rem;
             }
-
         }
 
         &:first-of-type {
@@ -285,44 +277,43 @@
     &__image {
         width: 48%;
         border-radius: 3px;
-        box-shadow: 0px 8px 13px rgba(0,0,0,0.3);
+        box-shadow: 0px 8px 13px rgba(0, 0, 0, 0.3);
 
-        @media only screen and (max-width: $bp-large ) {
+        @media only screen and (max-width: $bp-large) {
             width: 65%;
         }
 
-        @media only screen and (max-width: $bp-medium ) {
+        @media only screen and (max-width: $bp-medium) {
             width: 75%;
         }
 
-        @media only screen and (max-width: $bp-small ) {
+        @media only screen and (max-width: $bp-small) {
             width: 90%;
         }
 
-        @media only screen and (max-width: $bp-smallest ) {
+        @media only screen and (max-width: $bp-smallest) {
             width: 100%;
         }
-
     }
 
     &__description {
         width: 48%;
         text-align: left;
 
-        @media only screen and (max-width: $bp-large ) {
+        @media only screen and (max-width: $bp-large) {
             width: 65%;
             margin-bottom: 3rem;
         }
 
-        @media only screen and (max-width: $bp-medium ) {
+        @media only screen and (max-width: $bp-medium) {
             width: 75%;
         }
 
-        @media only screen and (max-width: $bp-small ) {
+        @media only screen and (max-width: $bp-small) {
             width: 90%;
         }
 
-        @media only screen and (max-width: $bp-smallest ) {
+        @media only screen and (max-width: $bp-smallest) {
             width: 100%;
         }
     }
@@ -334,7 +325,7 @@
         color: var(--text);
         margin-bottom: 2rem;
 
-        @media only screen and (max-width: $bp-large ) {
+        @media only screen and (max-width: $bp-large) {
             margin-top: 2.2rem;
         }
     }
@@ -354,16 +345,14 @@
             margin-right: 3rem;
         }
 
-        @media only screen and (max-width: $bp-large ) {
+        @media only screen and (max-width: $bp-large) {
             justify-content: space-evenly;
         }
     }
-
 }
 
 // 🔗🔗 Contact ------------------------------------------------------------------------------------------------------------
 .contact {
-
     &__content {
         display: flex;
         flex-direction: column;
@@ -409,7 +398,7 @@
             color: #777;
             letter-spacing: 8px;
             margin-left: 6px;
-            transform: scaleY(.98);
+            transform: scaleY(0.98);
 
             text-transform: uppercase;
         }
@@ -421,7 +410,7 @@
         color: var(--text-highlight);
         text-transform: uppercase;
         text-align: center;
-        letter-spacing: .7px;
-        transform: scaleY(.984);
+        letter-spacing: 0.7px;
+        transform: scaleY(0.984);
     }
 }
